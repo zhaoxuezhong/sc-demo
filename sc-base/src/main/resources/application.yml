@@ -1,0 +1,9 @@
+server:
+  port: 9996
+spring:
+  application:
+    name: sc-base
+eureka:
+  client:
+    service-url:
+      defaultZone: http://localhost:9999/eureka/

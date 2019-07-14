@@ -1,0 +1,20 @@
+server:
+  port: 9997
+spring:
+  application:
+    name: sc-admin
+  datasource:
+    url: jdbc:mysql://127.0.0.1:3306/clouddo?useUnicode=true&characterEncoding=utf8
+    username: root
+    password: root
+  jackson:
+    date-format: yyyy-MM-dd
+    time-zone: GMT+8
+mybatis:
+  mapper-locations: mapper/**Mapper.xml
+  configuration:
+    map-underscore-to-camel-case: true
+eureka:
+  client:
+    serviceUrl:
+      defaultZone: http://localhost:9999/eureka/
